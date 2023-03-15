@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars" />
+      <img src="moon.png" id="moon" />
+      <img src="mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">MOON LIGHT</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>WHAT IS PARALLAX SCROLLING EFFECT</h2>
+      <br />
+      <p>
+        Parallax scrolling is a web design technique in which the website
+        background moves at a slower pace than the foreground. This results in a
+        3D effect as visitors scroll down the site, adding a sense of depth and
+        creating a more immersive browsing experience.Parallax is based on
+        optical illusion. Since the human eye perceives objects that are close
+        to us as larger than things farther away, we perceive distant objects as
+        if they were moving more slowly.Parallax is based on optical illusion.
+        Since the human eye perceives objects that are close to us as larger
+        than things farther away, we perceive distant objects as if they were
+        moving more slowly.Parallax scrolling is a web design technique in which
+        the website background moves at a slower pace than the foreground. This
+        results in a 3D effect as visitors scroll down the site, adding a sense
+        of depth and creating a more immersive browsing experience.Parallax is
+        based on optical illusion. Since the human eye perceives objects that
+        are close to us as larger than things farther away, we perceive distant
+        objects as if they were moving more slowly.Parallax scrolling is an
+        effect that is used in computer graphics to create the illusion of depth
+        for 2D scenes by moving background image layers slower than the
+        foreground layers. The earliest use of this technique was actually an
+        innovative approach to traditional animation methods created using what
+        was known as a multiplane camera by Disney and first appeared during the
+        1930s..Parallax is based on optical illusion. Since the human eye
+        perceives objects that are close to us as larger than things farther
+        away, we perceive distant objects as if they were moving more slowly.<br /><br />
+        Parallax
+        scrolling is a web design technique in which the website background
+        moves at a slower pace than the foreground. This results in a 3D effect
+        as visitors scroll down the site, adding a sense of depth and creating a
+        more immersive browsing experience.Parallax is based on optical
+        illusion. Since the human eye perceives objects that are close to us as
+        larger than things farther away, we perceive distant objects as if they
+        were moving more slowly.Parallax is based on optical illusion. Since the
+        human eye perceives objects that are close to us as larger than things
+        farther away, we perceive distant objects as if they were moving more
+        slowly.Parallax scrolling is a web design technique in which the website
+        background moves at a slower pace than the foreground. This results in a
+        3D effect as visitors scroll down the site, adding a sense of depth and
+        creating a more immersive browsing experience.Parallax is based on
+        optical illusion. Since the human eye perceives objects that are close
+        to us as larger than things farther away, we perceive distant objects as
+        if they were moving more slowly.Parallax scrolling is an effect that is
+        used in computer graphics to create the illusion of depth for 2D scenes
+        by moving background image layers slower than the foreground layers. The
+        earliest use of this technique was actually an innovative approach to
+        traditional animation methods created using what was known as a
+        multiplane camera by Disney and first appeared<br /><br />The illusion
+        has been long adopted into parallax across different mediums, fostering
+        a realistic effect. Its first use was in traditional animation, dating
+        back to as early as Disney’s Snow White and the Seven Dwarfs, and in
+        video games such as Super Mario.he illusion has been long adopted into
+        parallax across different mediums, fostering a realistic effect. Its
+        first use was in traditional animation, dating back to as early as
+        Disney’s Snow White and the Seven Dwarfs, and in video games such as
+        Super Mario.The illusion has been long adopted into parallax across
+        different mediums, fostering a realistic effect. Its first use was in
+        traditional animation, dating back to as early as Disney’s Snow White
+        and the Seven Dwarfs, and in video games such as Super Mario.he illusion
+        has been long adopted into parallax across different mediums, fostering
+        a realistic effect. Its first use was in traditional animation, dating
+        back to as early as Disney’s Snow White and the Seven Dwarfs, and in
+        video games such as Super Mario.<br /><br />Of course, it took a while
+        (four years to be precise) and the release of HTML5 and CSS 3 before web
+        designers warmed up to the idea of using parallax scrolling in their
+        work. Those that were in favor of this effect attributed the rationale
+        behind their choice to an improvement in user experience and engagement
+        with the websites that adopted it.Various versions of the multiplane
+        camera or the likes of one were used in the past, the earliest being
+        German film director and the foremost pioneer of silhouette animation,
+        Charlotte "Lotte" Reiniger’s creation that was used to make her seminal
+        film The Adventures of Prince Achmed in 1926. In fact, Reiniger is
+        credited to have devised the first form of a multiplane camera.With
+        advancements in CSS and HTML, parallax effects later evolved into the
+        world of web design as we know it today.With advancements in CSS and
+        HTML, parallax effects later evolved into the world of web design as we
+        know it today.With advancements in CSS and HTML, parallax effects later
+        evolved into the world of web design as we know it today.With
+        advancements in CSS and HTML, parallax effects later evolved into the
+        world of web design as we know it today.With advancements in CSS and
+        HTML, parallax effects later evolved into the world of web design as we
+        know it today.
+      </p>
+    </div>
+    <script>
+        let stars= document.getElementById('stars');
+        let moon= document.getElementById('moon');
+        let mountains_behind= document.getElementById('mountains_behind');
+        let mountains_front= document.getElementById('mountains_front');
+        let text= document.getElementById('text');
+        let btn= document.getElementById('btn');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+  </body>
+</html>
